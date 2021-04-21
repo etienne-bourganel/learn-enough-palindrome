@@ -1,16 +1,8 @@
+module.exports = Phrase;
+
 // Adds `reverse` to all strings.
 String.prototype.reverse = function () {
   return Array.from(this).reverse().join("");
-}
-
-// Adds 'blank' method to all strings.
-String.prototype.blank = function () {
-  return !!this.match(/^\s*$/g);
-}
-
-// Adds 'last' method to all arrays.
-Array.prototype.last = function () {
-  return this.slice(-1);
 }
 
 // Defines a Phrase object.
